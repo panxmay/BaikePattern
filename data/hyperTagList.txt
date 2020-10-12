@@ -1,0 +1,85 @@
+ language Chinese Japanese French English Russian American Italian Spanish German
+ country China Austria Brazil Russia Roma Canada Australia Japan Italy India England Germany France
+ city berkeley chicago california paris london berlin
+ musical_instrument piano guitar violin cello
+ algorithm svm kmeans knn
+ body eye heart lung face liver cells
+ fruits apple blackberry cherry orange mango pineapple
+ animal bird birds ant cat cats dog dogs fish mouse
+ company firm ebay ibm sap dell facebook amazon cisco nikon nokia yahoo pps youtube skype
+ database mysql oracle
+ book audio_books ebook ebooks bible comic comics cartoon cartoons author authors
+ sport run hiking football soccer
+ herbs tree trees
+ glossary word words
+ appliance television refrigerator humidifier
+ place square club bank banks
+ website dblp url
+ scenery stream river mountain hill
+ artificial_intelligence data_mining datamining text-mining text_mining
+ browser firefox chrome safari opera
+ lecture math physics geography biology chemistry
+ languages Chinese Japanese French English Russian American Italian Spanish German
+ countries China Austria Brazil Russia Roma Canada Australia Japan Italy India England Germany France
+ cities berkeley chicago california paris london berlin
+ instrument piano guitar violin cello
+ algorithms svm kmeans knn
+ organ eye heart lung face liver cells
+ fruit apple blackberry cherry orange mango pineapple
+ animals bird birds ant cat cats dog dogs fish mouse
+ companies firm ebay ibm sap dell facebook amazon cisco nikon nokia yahoo pps youtube skype
+ databases mysql oracle
+ books audio_books ebook ebooks bible comic comics cartoon cartoons author authors
+ sports run hiking football soccer
+ plant tree trees
+ vocabulary word words
+ household_appliance television refrigerator humidifier
+ site square club bank banks
+ websites dblp url
+ landscape stream river mountain hill
+ AI data_mining datamining text-mining text_mining
+ search_engine firefox chrome safari opera
+ lectures math physics geography biology chemistry
+ movies comedy thriller biography war action romance
+ movie comedy thriller biography war action romance
+ film comedy thriller biography war action romance
+ films comedy thriller biography war action romance
+ color green red purple black white
+ colour green red purple black white
+ colors green red purple black white
+ software vmware excel word
+ continent Africa Asia Europe
+ season writer autumn winter spring
+ time minute second hour
+ gender male female woman women
+ drinks wine juice milk
+ academic_conference iswc ieee acl acm iswc
+ network wireless wlan ipv6 wifi
+ video pps youtube
+ trade paypal brand canon thinkpad
+ arts dance music drama comedy
+ music nano jazz mp3 classical classical_music blues pop pop_music
+ accessory sunglasses earring ring necklace
+ vehicle bus taxi metro bike bicycle cycle
+ star moon earth jupiter
+ data_structure vector tensor array arrays list
+ disaster earthquake snowstorm avalanche tsunami
+ science psychology geology geomorphology geophysics geopolitics geometry philosophy astronomy astrophysics aesthetics cardiology
+ operating_system ubuntu unix windows linux debian android iso
+ w3c xhtml xml html
+ food hamburg cake muffin bread steak dumpling
+ bag backpack schoolbag
+ ontology owl
+ gui swing java j2se j2ee eclipse
+ program code codes php ajax python
+ google googlemaps map maps
+ map googlemaps
+ maps googlemaps
+ industry agriculture
+ biotech dna
+ student postgraduate doctor
+ device iphone phone telephone laptop cellphone computer computers macbook surface ipod nano mp3
+ career driver drivers doctor editor editors teacher teachers writer writers tester explorer farmer worker physicians
+ job driver drivers doctor editor editors teacher teachers writer writers tester explorer farmer worker physicians
+ jobs driver drivers doctor editor editors teacher teachers writer writers tester explorer farmer worker physicians
+ work driver drivers doctor editor editors teacher teachers writer writers tester explorer farmer worker physicians
