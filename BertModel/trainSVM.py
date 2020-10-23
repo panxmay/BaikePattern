@@ -52,8 +52,8 @@ for C in Cs:
 plt.plot(Cs, precision, label='precision')
 plt.plot(Cs, recall, label='recall')
 plt.plot(Cs, f1, label='F1')
-plt.xlabel('Cs')
-plt.ylabel('score')
+plt.xlabel('C')
+plt.ylabel('evaluation')
 plt.legend()
 plt.show()
 
