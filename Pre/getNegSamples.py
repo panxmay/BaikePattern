@@ -7,8 +7,8 @@ posset = set()
 
 def geo_process():
     # 地理数据
-    path = '../../data/notIsA.txt'
-    path_pos = '../../data/isA.txt'
+    path = '../data/notIsA.txt'
+    path_pos = '../data/isA.txt'
 
     for line in open(path, 'r', encoding='utf-8'):
         item = str(line.strip()).split(';;;;ll;;;;boarder;;;;ll;;;;')
