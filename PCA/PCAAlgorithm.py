@@ -23,7 +23,7 @@ for item in poslist:
         vec2 = summary_dict[item[1]].reshape(1, -1)
         arr = np.append(arr, cosine_similarity(vec1,vec2))
         # arr(cosine_similarity(vec1,vec2))
-        arr = np.append(arr, '1').reshape(1,-1)
+        arr = np.append(arr, 1).reshape(1,-1)
         df = df.append(pd.DataFrame(arr),ignore_index=True)
 
 for item in neglist:
@@ -34,14 +34,14 @@ for item in neglist:
         vec2 = summary_dict[item[1]].reshape(1, -1)
         arr = np.append(arr, cosine_similarity(vec1,vec2))
         # arr(cosine_similarity(vec1,vec2))
-        arr = np.append(arr, '0').reshape(1,-1)
+        arr = np.append(arr, 0).reshape(1,-1)
         df = df.append(pd.DataFrame(arr),ignore_index=True)
 
 x = df.loc[:,:2048]
 y = df.loc[:,2049]
 x = StandardScaler().fit_transform(x)
 
-pca = PCA(n_components=50)
+pca = PCA(n_components=500)
 principalComponents = pca.fit_transform(x, y)
 principalDf = pd.DataFrame(data = principalComponents)
 # principalDf = pd.DataFrame(data = principalComponents, columns = ['principal component 1', 'principal component 2'])
