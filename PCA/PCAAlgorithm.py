@@ -41,7 +41,7 @@ x = df.loc[:,:2048]
 y = df.loc[:,2049]
 x = StandardScaler().fit_transform(x)
 
-pca = PCA(n_components=500)
+pca = PCA(n_components=100)
 principalComponents = pca.fit_transform(x, y)
 principalDf = pd.DataFrame(data = principalComponents)
 # principalDf = pd.DataFrame(data = principalComponents, columns = ['principal component 1', 'principal component 2'])

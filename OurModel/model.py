@@ -12,7 +12,7 @@ from keras import regularizers
 from keras import optimizers
 from keras import losses
 
-epochs = 10
+epochs = 20
 
 # train 第一列是输入向量，第二列是上位词的one-hot向量
 x_train = []
