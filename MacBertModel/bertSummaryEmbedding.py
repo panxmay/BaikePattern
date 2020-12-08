@@ -8,7 +8,9 @@ concept_embedding_dict = {}
 title = 'coronavirus'
 title = 'geo'
 maxlen = 100
-path = '../data/MacBertModel/base/model/chinese-macbert-base'
+type = 'large'
+type = 'base'
+path = '../data/MacBertModel/'+type+'/model/chinese-macbert-base'
 tokenizer = BertTokenizer.from_pretrained(path)
 model = BertModel.from_pretrained(path)
 
@@ -63,6 +65,6 @@ for concept in concept_set:
     print(all, current)
     current += 1
 
-n_file = '../data/MacBertModel/' + title + '/summary_embedding.npy'
+n_file = '../data/MacBertModel/' +type+'/'+ title + '/summary_embedding.npy'
 np.save(n_file, embedding_dict)
 

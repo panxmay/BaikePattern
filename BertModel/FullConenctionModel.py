@@ -10,7 +10,7 @@ from keras import optimizers
 
 epochs = 1
 
-title = 'coronavirus'
+# title = 'coronavirus'
 title = 'geo'
 path ='../data/model/' + title
 word_file = 'word_embedding.npy'

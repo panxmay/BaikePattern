@@ -27,8 +27,8 @@ def geo_process():
         posset.add(item[1][:-1])
 
 def cov_process():
-    path = '../../data/negative_samples.txt'
-    path_pos = '../../data/positive_samples.txt'
+    path = '../data/negative_samples.txt'
+    path_pos = '../data/positive_samples.txt'
 
     for line in open(path, 'r', encoding='utf-8'):
         item = str(line.strip()).split(';;;;ll;;;;boarder;;;;ll;;;;')
