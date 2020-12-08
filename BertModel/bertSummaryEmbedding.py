@@ -6,7 +6,7 @@ import numpy as np
 
 concept_set = set()
 concept_embedding_dict = {}
-title = 'coronavirus'
+# title = 'coronavirus'
 title = 'geo'
 maxlen = 100
 
@@ -23,20 +23,30 @@ with open(os.path.join(path, name), 'r', encoding='utf-8') as f:
 s_path = '../data/' + title + '/concept'
 s_name = 'concept_summary.json'
 synonym_name = 'concept_synonyms.json'
+border_name = "concept_borders.json"
 s_f = open(os.path.join(s_path, s_name),'r', encoding='utf-8')
 # 更新同义词库
 syn_f = open(os.path.join(s_path, synonym_name),'r', encoding='utf-8')
+bor_f = open(os.path.join(s_path, border_name),'r', encoding='utf-8')
 concept_summary_dict = json.load(s_f)
 concept_synonyms_dict = json.load(syn_f)
-for i in concept_summary_dict:
-    concept_summary_dict[i].update(concept_synonyms_dict[i].items())
+concept_border_dict = json.load(bor_f)
+for i in concept_border_dict:
+    if i in concept_synonyms_dict.keys():
+        concept_border_dict[i].update(concept_synonyms_dict[i].items())
+
+    if i in concept_summary_dict.keys():
+        concept_border_dict[i].update(concept_summary_dict[i].items())
+
+
 
 embedding_dict = {}
 all = len(concept_set)
 current = 1
 for concept in concept_set:
-    summary_dict = concept_summary_dict[concept]
-    if summary_dict:
+    if concept in concept_border_dict.keys():
+        summary_dict = concept_border_dict[concept]
+
         embedding_list = []
         flag = 1
         for source, summary in summary_dict.items():
